@@ -1,7 +1,7 @@
 {
   "name": "elementary-light-ui",
   "theme": "ui",
-  "version": "0.26.0",
+  "version": "0.26.1",
   "description": "elementary-styled theme for interface components",
   "repository": "https://github.com/cassidyjames/elementary-light-ui.git",
   "license": "MIT",
