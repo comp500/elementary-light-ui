@@ -1,13 +1,16 @@
 // Colors
 
-@text-color: #444;
+@base-color: #fff;
+@titlebar-color: #DEDEDE;
+
+@text-color: #333;
 @text-color-subtle: #999;
 @text-color-highlight: #000;
 @text-color-selected: #fff;
 
-@text-color-info: #5293d8;
+@text-color-info: rgb(0, 136, 204);
 @text-color-success: #529b2f;
-@text-color-warning: #ff982d;
+@text-color-warning: rgb(173, 120, 41);
 @text-color-error: #c00;
 
 @text-color-ignored: @text-color-subtle;
@@ -16,28 +19,28 @@
 @text-color-modified: @text-color-warning;
 @text-color-removed: @text-color-error;
 
-@background-color-info: #0098ff;
-@background-color-success: #17ca65;
-@background-color-warning: #ff4800;
+@background-color-info: rgb(252, 252, 189);
+@background-color-success: #4e9a06;
+@background-color-warning: rgb(250, 173, 61);
 @background-color-error: #c00;
 @background-color-highlight: rgba(0, 0, 0, .1);
 @background-color-selected: #6aa5e9;
 
-@app-background-color: #ccc;
+@app-background-color: darken(@base-color, 4%);
 
-@base-background-color: #f4f4f4;
-@base-border-color: #9f9f9f;
+@base-background-color: @base-color;
+@base-border-color: rgba(0,0,0, 0.3);
 
 @pane-item-background-color: @base-background-color;
 @pane-item-border-color: @base-border-color;
 
-@input-background-color: #fff;
+@input-background-color: @base-background-color;
 @input-border-color: fadeout(@base-border-color, 10%);
 
 @tool-panel-background-color: @base-background-color;
 @tool-panel-border-color: @base-border-color;
 
-@inset-panel-background-color: #fff;
+@inset-panel-background-color: @base-background-color;
 @inset-panel-border-color: fadeout(@base-border-color, 10%);
 
 @panel-heading-background-color: #c3c3c3;
@@ -51,10 +54,10 @@
 @button-background-color-selected: #888;
 @button-border-color: rgba(0, 0, 0, 0.15);
 
-@tab-bar-background-color: #d8d8d8;
-@tab-bar-border-color: #ddd;
-@tab-background-color: #e8e8e8;
-@tab-background-color-active: #f0f0f0;
+@tab-bar-background-color: #B5B5B5;
+@tab-bar-border-color: #8F8F8F;
+@tab-background-color: @tab-bar-background-color;
+@tab-background-color-active: lighten(@tab-background-color, 10%);
 @tab-border-color: lighten(@base-border-color, 10%);
 
 @tree-view-background-color: #eee;
@@ -72,15 +75,15 @@
 @font-size: 11px;
 @disclosure-arrow-size: 12px;
 
-@component-padding: 10px;
+@component-padding: 12px;
 @component-icon-padding: 5px;
 @component-icon-size: 16px;
 @component-line-height: 25px;
 @component-border-radius: 2px;
 
-@tab-height: 26px;
+@tab-height: 24px;
 
 
 // Other
 
-@font-family: 'Lucida Grande', 'Segoe UI', sans-serif;
+@font-family: 'Droid Sans', 'Open Sans', sans-serif;
